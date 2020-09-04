@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Exception/Exception.iml" filepath="$PROJECT_DIR$/Exception/Exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/Object_Oriented_Programming/Object_Oriented_Programming.iml" filepath="$PROJECT_DIR$/Object_Oriented_Programming/Object_Oriented_Programming.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test.iml" filepath="$PROJECT_DIR$/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestModule/TestModule.iml" filepath="$PROJECT_DIR$/TestModule/TestModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test_For/Test_For.iml" filepath="$PROJECT_DIR$/Test_For/Test_For.iml" />
     </modules>
   </component>
