@@ -1,0 +1,9 @@
+StringBuilder提供一个与StringBuffer兼容的API，但是不保证同步（多线程问题）；
+    StringBuilder用作StringBuffer的一个简单替换；用于字符串缓冲区被单线程使用的时候，可以优先使用该类，此种情况下，比StringBuffer快速；
+    StringBuilder 线程不安全，没加锁
+    StringBuffer 线程安全，加锁
+ 1、StringBuilder是final类，不可被继承；
+ 2、继承了AbstractStringBuilder,其中的属性char[] value,内容存到value；
+ 3、实现了Serializable接口，可以序列化，即可以保存类型和数据本身，用于文件或网络传输
+
+

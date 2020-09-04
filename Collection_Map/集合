@@ -1,0 +1,23 @@
+之前保存数据使用数组。数组的缺陷：
+    1、长度固定（需要扩容）；
+    2、必须是同一类型的元素；
+    3、增删改查比较麻烦；
+
+集合：
+    特点：可以动态保存任意多个对象；提供一系列方法（增删改查）；
+
+    集合体系图：
+        单列集合： Collection（接口）
+                    List(Collection子接口)
+                        ArrayList
+                        LinkedList
+                        Vector
+                    Set（Collection子接口）
+                        HashSet
+                        TreeSet
+
+        双列集合：Map(接口)     [键值对]
+                    HashMap
+                    TreeMap
+                    Hashtable
+                    Properties

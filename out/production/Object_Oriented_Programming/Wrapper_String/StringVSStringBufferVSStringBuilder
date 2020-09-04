@@ -1,0 +1,11 @@
+String、StringBuffer、StringBuilder
+1、StringBuilder和StringBuilder类似，均代表可变的字符序列，且方法一样；
+2、String不可变字符序列，效率低，但是复用率高；
+3、StringBuffer可变字符序列、效率较高（增删）、线程安全（方法使用synchronized修饰）
+4、String Builder可变字符序列，效率最高，线程不安全（方法没有使用synchronized修饰）
+5、对于String 来说，使用的时候需要注意：
+    String string = ”hello“; //如果常量池没有”hello“，创建了一个字符串；
+    string +="yuye"; //实际上，原来的hello字符串对象已经丢失，又产生了一个新的字符串”helloyuye“（final修饰可见一斑）。
+    如果多次执行这邪恶改变串内容的操作，会导致大量副本字符串对象留存在内存中，降低效率。如果在循环中出现，会极大影响程序的性能
+    因此，在需要多次更改字符串的内容时，不使用String
+

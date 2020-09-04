@@ -1,0 +1,3 @@
+自定义Enum和使用enum关键字定义枚举，所继承的类不同。
+    自定义枚举类直接继承自Object
+    使用enum关键字定义的枚举类，直接继承自Enum类，Enum类又继承自Object

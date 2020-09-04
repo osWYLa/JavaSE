@@ -1,0 +1,11 @@
+StringBuffer 表示可变的字符序列；可变长度；是容器
+1、StringBuffer 是final类
+2、实现了Serializable接口，可以保存到文件，或者用于网络传输
+3、继承了抽象类 AbstractStringBuilder
+4、AbstractStringBuilder属性char[] value用于存放字符序列；
+
+
+String VS StringBuffer
+1)String 保存字符串常量，里面的值不能更改，每次String类的更新实际上就是更改地址，效率较低//private final char value[];
+2)StringBuffer 保存的是字符串变量，里面的值可以更改，每次StringBuffer的更新实际上可以更新内容不用更新地址，效率较高(存放在堆)//char[] value
+

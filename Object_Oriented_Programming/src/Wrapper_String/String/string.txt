@@ -1,0 +1,6 @@
+String 类的理解和创建对象
+    1、String对象用于保存字符串；字符串字符使用Unicode字符编码，一个字符（不区分字母还是汉字）占两个字节
+    2、String是final类，不可被继承；
+    3、实现了Serializable接口，可以保存到文件或者用于网络传输；
+    4、实现了Comparable接口，可以进行比较；
+    5、String的内容是存放在final char[] 中的，用于final 不可更改，所以每次存的时候都是一个新的String对象；
