@@ -3,4 +3,7 @@ public class Hometest {
         System.out.println("Home test");
         System.out.println("Test02");
     }
+    public void m1(){
+        System.out.println("m1 方法");
+    }
 }
