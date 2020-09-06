@@ -1,4 +1,4 @@
-package Collection.List;
+package Collection;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -15,16 +15,16 @@ import java.util.List;
 public class ListExercise {
     public static void main(String[] args) {
         List list = new ArrayList();
-        list.add(new Book("三国",15,"罗贯中"));
-        list.add(new Book("红楼",28,"曹雪芹"));
-        list.add(new Book("西游",20,"吴承恩"));
+        list.add(new Book03("三国",15,"罗贯中"));
+        list.add(new Book03("红楼",28,"曹雪芹"));
+        list.add(new Book03("西游",20,"吴承恩"));
 
         list.sort(new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
-                Book book = (Book)o1;
+                Book03 book = (Book03)o1;
                 float price1 = book.getPrice();
-                Book book1 = (Book)o2;
+                Book03 book1 = (Book03)o2;
                 float price2 = book1.getPrice();
                 if (price1>price2) return 1;
                 else if (price1<price2) return -1;
@@ -35,7 +35,7 @@ public class ListExercise {
         Iterator iterator = list.iterator();
 
         while (iterator.hasNext()){
-            Book book = (Book)iterator.next();
+            Book03 book = (Book03)iterator.next();
             System.out.print("书名：" + book.getName()+"  ");
             System.out.print("价格："+book.getPrice()+"  ");
             System.out.println("作者："+book.getWriter());
@@ -43,12 +43,12 @@ public class ListExercise {
 
     }
 }
-class Book{
+class Book03{
     private String name;
     private float price;
     private String writer;
 
-    public Book(String name, float price, String writer) {
+    public Book03(String name, float price, String writer) {
         this.name = name;
         this.price = price;
         this.writer = writer;
