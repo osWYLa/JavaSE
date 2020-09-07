@@ -1,0 +1,17 @@
+LinkedList
+    1)LinkedList 实现了双向链表，具有双端队列特点；
+    2）实现了List接口的所有操作；
+    3）可以添加任意元素（元素可以重复），包括null;
+    4)线程不安全，没有实现同步
+
+LinkedList底层
+    1）LinkedList 底层维护了一个双向链表；
+    2）LinkedList中维护了两个属性first和last分别指向 首节点和尾节点；
+    3）每个节点（Node对象），里面维护了prev、next、item三个属性，其中通过prev指向前一个，next指向后一个节点，实现双向链表；
+    4）添加和删除元素效率较高；
+
+
+LinkedList Vs ArrayList
+            底层结构    增删效率                         改查效率
+ArrayList   可变数组    较低，每次都需要判断是否需要扩容      较高   索引，地址偏移查找   （改查多，使用ArrayList）
+LinkedList  双向链表    较高，通过链表追加                  较低   next->next->...   (增删多，使用LinkedList)
