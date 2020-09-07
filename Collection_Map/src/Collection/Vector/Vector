@@ -1,0 +1,9 @@
+Vector 底层也是一个可变数组，数据存储在protected Object[] elementData;
+
+Vector 是线程同步的，即线程安全，Vector类的操作方法带有synchronized关键字
+
+开发过程中，主要使用ArrayList，只在确实需要线程同步安全的时候使用Vector（如坦克大战）
+
+关于Vector的扩容：
+    1）使用无参构造函数，默认大小为10；需要扩容时，扩容为当前容量的2倍；
+    2）使用有参构造函数，指定大小，需要扩容时，扩容为当前容量的2倍；
