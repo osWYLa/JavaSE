@@ -1,0 +1,17 @@
+ArrayList
+    实现了List接口，实现了List所有的操作；底层为数组，并实现可变的功能。由数组实现数据存储；
+    ArrayList属性，用于存放元素：transient Object[] elementData;//transient 保证在序列化时，忽略该属性；
+    permits all elements,including null,ArrayList 可以加入null,并且可以加入多个；
+    ArrayList基本等同于Vector，除了ArrayList是线程不安全，但是执行效率高。多线程使用ArrayList时需要格外注意；
+
+ArrayList底层源码结构和源码分析：
+    1）ArrayList 维护了一个Object类型的数组elementData : transient Object[] elementData;
+    2)当创建对象时，如果使用的是无参构造器，则初始化elementData容量为0；（JDK 7 为10）
+    3）当添加元素时：先判断是否需要扩容，如果需要扩容，则调用grow方法，否则直接添加元素到合适位置；
+    4）如果使用的是无参构造器，如果第一次添加，需要扩容的话，则扩容elementData为10.如果需要再次扩容的话，则扩容elementData为 1.5倍；
+    5）如果使用的是指定容量的capacity的构造器，则初始化elementData容量为capacity
+    6)如果使用的是指定容量capacity的构造器，如果需要扩容，则直接扩容elementData的1.5倍
+
+ArrayList Debug时需要设置IDEA，取消IDEA对Debug信息的优化显示；
+    类加载过程可以通过先强制进入，在直接跳出，跳过类加载过程；直接到构造器位置进行分析；
+
