@@ -1,0 +1,5 @@
+HashTable基本介绍：
+    1）键值对存储
+    2）键和值都不能为null;
+    3)基本同于HashMap
+    4）HashTable是线程安全的，HashMap是线程不安全的；

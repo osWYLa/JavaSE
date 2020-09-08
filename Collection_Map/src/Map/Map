@@ -1,0 +1,18 @@
+Map 接口（使用价值高）
+双列集合
+    1）Map 与Collection并列存在，用于保存具有映射关系的数据：key-value
+    2) Map 中的key和value都可以是任何引用类型的数据；
+    3）Map 中的key 使用Set来存放，不允许重复（key 不可以重复）
+    4）Map 中的value可以重复；
+    5）Map的key可以为null，value也可以是null；
+    6）常用的String类作为Map的键；
+    7）key和value之间存在单向一对一的关系，即通过指定的key总能找到唯一的确定的key;
+    8)Map元素无序的，因为key是使用Set来存放的。而Set本身是无序的；
+注意：key使用Set集合存放，意味着若想实现相同元素不添加，需要自己实现hashCode和equals方法。Set集合只是提供这套机制；
+
+对于Map双列集合的说明
+     1）Map体系继承图
+                                      Map(接口)
+                 HashTable（实现）      HashMap（实现）       SortedMap（继承）
+                 Properties（继承）     LinkedHashMap（继承）          TreeMap（实现）
+     2)
