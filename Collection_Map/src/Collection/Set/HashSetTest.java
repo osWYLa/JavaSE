@@ -23,16 +23,16 @@ public class HashSetTest {
 
 
 
-        set.add(new Dog("tian"));
+     //   set.add(new Dog("tian"));
         set.add("john");
         set.add("yuye");
         set.add("jack");
         set.add("hello");
         set.add("hello");
         set.add(null);
-        set.add(new Dog("tian"));
-        set.add(new Dog("tian"));
-
+        for (int i =0;i<90;i++){
+            set.add(new Dog("tian"));
+        }
         System.out.println(set); //HashSet 重写了toString方法
 
         //set的遍历
@@ -58,7 +58,7 @@ class Dog {
         this.name = name;
     }
 
-  /*  @Override
+    @Override
     public boolean equals(Object o) {
         return false;
     }
@@ -66,5 +66,5 @@ class Dog {
     @Override
     public int hashCode() {
         return 1;
-    }*/
+    }
 }

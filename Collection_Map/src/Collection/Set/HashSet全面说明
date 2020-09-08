@@ -1,0 +1,9 @@
+HashSet
+    实现了Set接口;
+    HashSet底层实际上是HashMap;
+    可以存放null，但是只能有一个null;
+    HashSet不保证元素是有序的，取决于hash后，在进行索引的结果；
+    不能有重复元素，同前面的Set接口
+
+
+
