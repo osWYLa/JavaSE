@@ -1,8 +1,7 @@
-package Collection.Set;
+package Collection.Set.HashSet;
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Objects;
 import java.util.Set;
 
 /**
