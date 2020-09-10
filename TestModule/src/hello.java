@@ -11,3 +11,6 @@ public class hello {
         System.out.println("Dev宿舍添加");
     }
 }
+class ABC{
+    int i =0;
+}
