@@ -1,0 +1,25 @@
+
+
+
+反射主要API：
+    java.lang.Class : 代表一个类，即类 也是对象，是class对象
+        1）对象反射后可以得到的信息：对应类的属性、方法和构造器、某个类到底实现了哪些接口。对于每个类而言，JRE都为其保留一个不变的Class类型对象。
+           一个Class对象包含了特定某个类的有关信息；通过Class类，可以完整得到一个类的完整结构；
+        2）Class本省也是一个类，本身属于一种类型，继承Object类；
+        3）Class类本身不是new出来的，而是类加载是系统创建出来的；对于某个具体内的Class类对象，在内存中只有一份，因为类只加载一次；
+        4）可以理解成：一个Class对象对应的是一个加载到JVM中的.class文件
+        5）每个类的实例都会记得自己是由哪个Class实例所生成；
+        6）Class对象是存放在堆中的。类的元数据（方法代码 ，变量名，方法名，访问权限，返回值等都是在方法区）
+
+        实例化Class类对象（四种方法）
+           1）已知具体的类，通过类的class获取，最安全，性能最好； Class class1 = String.class;
+           2)已知某个类的实例，调用该实例的getClass()方法获取Class对象； Class class2 = 对象.getClass;
+           3)已知一个类的全类名，且该类在类路径下，可以通过Class类的静态方法forName()获取【需要异常处理】； Class class3 = Class.forName("java.lang.String");
+           4)其他方式：
+           ClassLoader classLoader = this.getClass().getClassLoader();
+           Class class4 = classLoader.loadClass("类的全类名");
+
+
+    java.lang.reflect.Method: 代表类的方法
+    java.lang.reflect.Filed ：代表类的成员变量
+    java.lang.reflect.Constructor： 类的构造器
