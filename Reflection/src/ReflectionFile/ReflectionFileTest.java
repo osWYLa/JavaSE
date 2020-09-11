@@ -27,6 +27,7 @@ public class ReflectionFileTest {
         Object o = constructor.newInstance(filename);
 
         //这里不是已经可以直接使用file.createNewFile()?为什么还需要使用反射 boolean newFile = file.createNewFile();
+        //回答：主要是因为开始没有指定泛型为File，使用Object 接收，Object在没有向下转型的时候是没有办法调createNewFile()这个方法的。所以使用反射
             //使用反射得到createNewFile方法 对象
         Method createNewFileMethod = fileClass.getMethod("createNewFile"); //该方法没有参数
          createNewFileMethod.invoke(o);
