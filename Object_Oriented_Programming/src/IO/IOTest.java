@@ -10,7 +10,7 @@ import java.io.FileOutputStream;
  * @Description
  * @Version
  */
-public class IOTest {
+public class  IOTest {
     public static void main(String[] args) {
         FileInputStream fileInputStream = null;
         FileOutputStream fileOutputStream = null;
