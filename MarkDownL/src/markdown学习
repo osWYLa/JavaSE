@@ -1,0 +1,52 @@
+Markdown 格式说明   
+<标题>
+# hello
+## hello
+### hello 
+#### hello
+
+无序列表：
+- hello
+- hello
+- hello
+- 
+有序列表（1.后面需要加空格）
+1. hello
+2. hello
+3. hello
+
+引用
+>朝辞白帝彩云间
+>千里江陵一日还
+>两岸猿声啼不住
+>轻舟已过万重山
+
+>hello
+>*hello*
+>**hello**
+
+
+插入图片和链接
+<h2 id="picture"></h2>
+[简书](http://www.jianshu.com)
+<h2 id="picture"></h2>
+[百度](https://www.baidu.com)
+<h2 id="picture"> </h2>
+![](http://upload-images.jianshu.io/upload_images/259-0ad0d0bfc1c608b6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+代码引用
+单行代码引用：
+`hello  world`
+
+多段代码引用:
+```
+hello world
+hello java
+hello markdown
+```
+
+表格
+
+注释
+
+
