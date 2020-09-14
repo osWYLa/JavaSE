@@ -1,6 +1,4 @@
-package Thread;
-
-import javax.sound.midi.Soundbank;
+package Thread.Methods;
 
 /**
  * @author wyl
@@ -13,6 +11,9 @@ import javax.sound.midi.Soundbank;
  *              getPriority 获取线程优先级
  *              interrupt 中断线程(中断)
  *              sleep
+ *              yield 礼让，让出CPU占用权（礼让时间不确定，也不一定成功）
+ *              join 线程的插队。插队的线程一旦成功，则一定先执行完该线程所有的任务
+ *
  *
  *
  * @Version
