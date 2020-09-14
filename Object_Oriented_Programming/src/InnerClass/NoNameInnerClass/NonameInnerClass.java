@@ -40,7 +40,7 @@ class Outer04 {
 
 
         //第二种用法：直接基于类
-            //
+            //相当于有个类继承了B类。重写了test方法。所以这里能使用override。只不过这个类没有名字。匿名内部类。.test 时候就一定不能使用b接收了。显而易见。
         B b = new B() {
             @Override
             public void test() {
@@ -48,6 +48,7 @@ class Outer04 {
             }
         };
         b.test();
+        System.out.println(b.getClass());
 
     }
 }
