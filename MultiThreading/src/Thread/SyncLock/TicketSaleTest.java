@@ -1,4 +1,4 @@
-package Thread;
+package Thread.SyncLock;
 
 /**
  * @author wyl
